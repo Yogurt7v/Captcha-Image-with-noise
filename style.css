@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #607274;
+}
+
+#captcha-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #FAEED1;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+#captcha-container img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.captcha{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+}
+
+.captcha button,
+.user button,
+.user input{
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+}
+
+canvas{
+    border: none;
+    background-color: #e8e8e8;
+    border-radius: 4px;
+    border: 2px solid #DED0B6;
+    border-radius: 6px;
+}
+
+.user{
+    width: 100%;
+}
+
+.user input,
+.user button{
+    margin-bottom: 14px;
+}
+
+button{
+    cursor: pointer;
+    background-color: #B2A59B;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+button:hover{
+    background-color: #958476;
+}
+
+#captcha-status{
+    text-align: center;
+    color: #FAEED1;
+}
